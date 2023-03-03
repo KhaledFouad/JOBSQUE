@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
           // colorCubit.isDarkTheme ? Themes.darkTheme : Themes.lightTheme,
           debugShowCheckedModeBanner: false,
           onGenerateRoute: onGenerate,
-           initialRoute: AppRoutes.homePageRoute,
+          initialRoute: AppRoutes.applyJobPageRoute,
         );
         // });
       },

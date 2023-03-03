@@ -89,6 +89,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.0"
+  contact_picker_platform_interface:
+    dependency: transitive
+    description:
+      name: contact_picker_platform_interface
+      sha256: "40847ffa0f6e6755c0047e8ef35c4b622a2b053f41ef175d22c19f03984a9ed1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.7.0"
+  contact_picker_web:
+    dependency: transitive
+    description:
+      name: contact_picker_web
+      sha256: "13e739a6ce8f3286e441028dec5967b90fd2d5ceaec53045ae054b030877fe31"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.7.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -113,6 +129,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+  extended_phone_number_input:
+    dependency: "direct main"
+    description:
+      name: extended_phone_number_input
+      sha256: af41a682b115e50d5d11259628e9d3e0677cf966d4b639cf5ab2b2b7f06f612d
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   fake_async:
     dependency: transitive
     description:
@@ -137,14 +161,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.4"
-  filter_list:
-    dependency: "direct main"
-    description:
-      name: filter_list
-      sha256: "2d80d6d19beb7847c1176e8bf6fe06d302b23eb7d1bf48c231dd730409ff9b4d"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.2"
   firebase_auth:
     dependency: "direct main"
     description:
@@ -229,6 +245,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  fluttercontactpicker:
+    dependency: transitive
+    description:
+      name: fluttercontactpicker
+      sha256: cddd2ba4631f97927adb59c53a529ee8f965e8685eded66a6d5988347aef6ec4
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.7.0"
   freezed_annotation:
     dependency: transitive
     description:
@@ -341,6 +365,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.3"
+  phone_number_metadata:
+    dependency: transitive
+    description:
+      name: phone_number_metadata
+      sha256: "32d42fac690951941fe9ddd7fd62e79ea98fab46141ddc9e5f8322885b68f9b0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.2"
+  phone_numbers_parser:
+    dependency: transitive
+    description:
+      name: phone_numbers_parser
+      sha256: "35eb7499bed3ddce7415c75b9485ffbc5c9d87a5111c81202f64a1f6f040ddf0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.1"
   platform:
     dependency: transitive
     description:
@@ -442,14 +482,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
-  smooth_page_indicator:
-    dependency: "direct main"
-    description:
-      name: smooth_page_indicator
-      sha256: "8c301bc686892306cd41672c1880167f140c16be305d5ede8201fefd9fcda829"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.1"
   source_span:
     dependency: transitive
     description:

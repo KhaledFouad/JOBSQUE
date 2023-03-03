@@ -92,7 +92,8 @@ class DefaultFormField extends StatelessWidget {
       height: height,
       padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
       decoration: BoxDecoration(
-          color: Colors.grey[300], borderRadius: BorderRadius.circular(radius)),
+          color: AppColor.buttonColor,
+          borderRadius: BorderRadius.circular(radius)),
       child: TextFormField(
         obscuringCharacter: obscuringChar,
         maxLength: maxLength,
