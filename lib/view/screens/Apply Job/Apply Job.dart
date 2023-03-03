@@ -14,7 +14,9 @@ class _ApplyJobState extends State<ApplyJob> {
       appBar: AppBar(
         title: const Text(''),
       ),
-      body: Container(),
+      body: Container(
+        child: Text("data"),
+      ),
     );
   }
 }
