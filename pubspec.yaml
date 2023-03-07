@@ -48,6 +48,7 @@ dependencies:
   # flutter_onboard: ^2.0.0
   # filter_list: ^1.0.2
   extended_phone_number_input: ^1.0.2
+  file_picker:
 
 
 

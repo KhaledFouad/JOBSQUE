@@ -25,31 +25,32 @@ class _ListTileApplyJobState extends State<ListTileApplyJob> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListTile(
-          title: Row(
-            children: [
-              DefaultText(
-                text: widget.text1,
-                color: AppColor.balck2,
-                fontSize: 16,
-                fontWeight: FontWeight.w400,
-              ),
-              DefaultText(
-                text: "*",
-                color: AppColor.errorColor,
-              ),
-            ],
-          ),
-          subtitle: DefaultFormField(
-            controller: widget.controller,
-            keyboardType: TextInputType.name,
-            textInputAction: TextInputAction.next,
-            hintText: widget.text1,
-            prefixIcon: Icon(
-              widget.icon,
-              size: 30,
-              color: AppColor.thirdFont,
+        Row(
+          children: [
+            DefaultText(
+              text: widget.text1,
+              color: AppColor.balck2,
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
             ),
+            DefaultText(
+              text: "*",
+              color: AppColor.errorColor,
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 1.h,
+        ),
+        DefaultFormField(
+          controller: widget.controller,
+          keyboardType: TextInputType.name,
+          textInputAction: TextInputAction.next,
+          hintText: widget.text1,
+          prefixIcon: Icon(
+            widget.icon,
+            size: 30,
+            color: AppColor.thirdFont,
           ),
         ),
         SizedBox(

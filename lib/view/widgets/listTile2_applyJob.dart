@@ -19,34 +19,36 @@ class _ListTile2ApplyJobState extends State<ListTile2ApplyJob> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListTile(
-            title: Row(
-              children: [
-                DefaultText(
-                  text: widget.text1,
-                  color: AppColor.balck2,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
-                ),
-                DefaultText(
-                  text: "*",
-                  color: AppColor.errorColor,
-                ),
-              ],
+        Row(
+          children: [
+            DefaultText(
+              text: widget.text1,
+              color: AppColor.balck2,
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
             ),
-            subtitle: PhoneNumberInput(
-                hint: "No.Handphone",
-                allowPickFromContacts: false,
-                // controller: _controller,
-                initialCountry: 'TN',
-                locale: 'en',
-                countryListMode: CountryListMode.dialog,
-                enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(color: AppColor.thirdFont)),
-                focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(color: AppColor.primaryColor)))),
+            DefaultText(
+              text: "*",
+              color: AppColor.errorColor,
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 1.h,
+        ),
+        PhoneNumberInput(
+            hint: "No.Handphone",
+            allowPickFromContacts: false,
+            // controller: _controller,
+            initialCountry: 'us',
+            locale: 'en',
+            countryListMode: CountryListMode.dialog,
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: BorderSide(color: AppColor.thirdFont)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: BorderSide(color: AppColor.primaryColor))),
         SizedBox(
           height: 4.5.h,
         )

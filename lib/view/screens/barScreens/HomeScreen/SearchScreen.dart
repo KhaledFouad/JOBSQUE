@@ -137,7 +137,7 @@ class CustomSearchDelegate extends SearchDelegate {
                           trailing: InkWell(
                             onTap: () {},
                             child: Icon(
-                              Icons.remove_circle_outline_sharp,
+                              Icons.highlight_remove_rounded,
                               color: AppColor.errorColor,
                             ),
                           ),
