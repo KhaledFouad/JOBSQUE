@@ -339,7 +339,7 @@ List<Image> messageImages = [
   Image.asset("assets/Gojek Logo.png"),
   Image.asset("assets/Dana Logo.png"),
 ];
-List<String> messageTitle = [];
+List<String> messageTitle = ['Twitter', 'Gojek Indonesia', 'Dana'];
 List<String> messageContent = [
   'Here is the link: http://zoom.com/abcdeefg',
   'Let’s keep in touch.',
