@@ -56,7 +56,7 @@ class _Step1State extends State<Step1> {
           SizedBox(
             height: 13.h,
           ),
-          widget.button,
+          widget.button
         ],
       ),
     );

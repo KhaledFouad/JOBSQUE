@@ -4,6 +4,7 @@ import 'package:my_app/utilities/route/routes.dart';
 import 'package:my_app/view/widgets/CustomListTile.dart';
 import 'package:my_app/view/widgets/SuggestedJobType2.dart';
 import 'package:my_app/view/widgets/customText.dart';
+import 'package:my_app/view/widgets/default_button.dart';
 import 'package:my_app/view/widgets/default_text.dart';
 import 'package:sizer/sizer.dart';
 import '../../../utilities/theme/AppColor.dart';
@@ -484,19 +485,23 @@ class _JobDetailScreenState extends State<JobDetailScreen>
                     ],
                   ),
                 ]),
-                floatingActionButton: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: FloatingActionButton.extended(
-                    elevation: 0,
-                    backgroundColor: AppColor.primaryColor,
-                    onPressed: () {
-                      Navigator.pushNamed(context, AppRoutes.applyJobPageRoute);
-                    },
-                    label: DefaultText(
-                      text: 'Apply now',
-                      fontSize: 16,
-                      color: AppColor.white,
-                    ),
+                floatingActionButtonLocation:
+                    FloatingActionButtonLocation.centerDocked,
+                floatingActionButton: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: AppColor.buttonColor2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                  ),
+                  height: 50,
+                  margin: const EdgeInsets.all(10),
+                  child: DefaultMaterialButton(
+                    onPressed: () => Navigator.pushNamed(
+                        context, AppRoutes.applyJobPageRoute),
+                    text: "Apply now",
+                    textColor: AppColor.white,
+                    fontSize: 16,
+                    radius: 1000,
+                    background: AppColor.primaryColor,
                   ),
                 ),
               ),

@@ -99,9 +99,9 @@ class _Step3State extends State<Step3> {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
-                        Icons.mode_edit_outline_outlined,
+                        Icons.drive_file_rename_outline_outlined,
                         color: AppColor.primaryColor,
-                        size: 25,
+                        size: 30,
                       ),
                     ),
                     IconButton(
@@ -134,7 +134,6 @@ class _Step3State extends State<Step3> {
           SizedBox(
             height: 0.5.h,
           ),
-          
           if (result != null)
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -173,9 +172,9 @@ class _Step3State extends State<Step3> {
               child: const Text("File Picker"),
             ),
           ),
-          SizedBox(
-            height: 5.h,
-          ),
+          // SizedBox(
+          //   height: 5.h,
+          // ),
           widget.button,
         ],
       ),

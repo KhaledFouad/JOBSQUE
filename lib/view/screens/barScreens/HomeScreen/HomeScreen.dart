@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:my_app/utilities/route/routes.dart';
 import 'package:my_app/utilities/theme/AppColor.dart';
 import 'package:my_app/view/widgets/RecentJob.dart';
@@ -117,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontweight: FontWeight.w500,
                       textColor: AppColor.balck2,
                     ),
-                    Spacer(),
+                    const Spacer(),
                     DefaultTextButton(
                       onPressed: () {},
                       child: CustomText(
@@ -165,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontweight: FontWeight.w500,
                       textColor: AppColor.balck2,
                     ),
-                    Spacer(),
+                    const Spacer(),
                     DefaultTextButton(
                       onPressed: () {},
                       child: CustomText(

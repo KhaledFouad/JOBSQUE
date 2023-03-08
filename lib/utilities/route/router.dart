@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/utilities/route/routes.dart';
 import 'package:my_app/view/screens/Apply%20Job/Apply%20Job.dart';
+import 'package:my_app/view/screens/Apply%20Job/HomeScreenUpdated.dart';
+import 'package:my_app/view/screens/Apply%20Job/applyDoneScreen.dart';
+import 'package:my_app/view/screens/barScreens/messageScreen/chat.dart';
 import 'package:my_app/view/screens/Job%20Detail/JobDetailScreen.dart';
 import 'package:my_app/view/screens/barScreens/NavigationBar.dart';
 import 'package:my_app/view/screens/barScreens/HomeScreen/HomeScreen.dart';
@@ -59,9 +62,21 @@ Route<dynamic> onGenerate(RouteSettings routeSettings) {
     case AppRoutes.applyJobPageRoute:
       return MaterialPageRoute(
           builder: (_) => const ApplyJob(), settings: routeSettings);
+    case AppRoutes.chatPageRoute:
+      return MaterialPageRoute(
+          builder: (_) => Chat(
+                indx: 0,
+              ),
+          settings: routeSettings);
+    case AppRoutes.applySuccessPageRoute:
+      return MaterialPageRoute(
+          builder: (_) => const ApplyDoneScreen(), settings: routeSettings);
     case AppRoutes.homePageRoute:
       return MaterialPageRoute(
           builder: (_) => const HomeScreen(), settings: routeSettings);
+    case AppRoutes.homePageUpdatedRoute:
+      return MaterialPageRoute(
+          builder: (_) => const HomeScreenUpdated(), settings: routeSettings);
     case AppRoutes.setFilterPageRoute:
       return MaterialPageRoute(
           builder: (_) => const SetFilterScreen(), settings: routeSettings);

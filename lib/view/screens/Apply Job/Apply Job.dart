@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/utilities/route/routes.dart';
 import 'package:my_app/utilities/theme/AppColor.dart';
 import 'package:my_app/view/screens/Apply%20Job/step2.dart';
 import 'package:my_app/view/screens/Apply%20Job/step1.dart';
@@ -132,7 +133,8 @@ class _ApplyJobState extends State<ApplyJob> {
                       button: Align(
                         alignment: Alignment.bottomCenter,
                         child: DefaultMaterialButton(
-                          onPressed: () => continued(),
+                          onPressed: () => Navigator.pushNamed(
+                              context, AppRoutes.applySuccessPageRoute),
                           text: "Submit",
                           textColor: AppColor.white,
                           fontSize: 16,

@@ -48,7 +48,7 @@ class DefaultMaterialButton extends StatelessWidget {
         splashColor: splashColor,
         color: background,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(radius))),
+            borderRadius: BorderRadius.all(Radius.circular(radius),)),
         onPressed: onPressed,
         child: DefaultText(
           text: isUpperCase ? text.toUpperCase() : text,
