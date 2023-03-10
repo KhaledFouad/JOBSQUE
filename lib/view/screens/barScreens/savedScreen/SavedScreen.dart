@@ -135,7 +135,7 @@ class _SavedScreenState extends State<SavedScreen> {
                                       ),
                                       builder: (BuildContext context) {
                                         return SizedBox(
-                                          height: 30.h,
+                                          height: 35.h,
                                           child: ListView.builder(
                                             padding: EdgeInsets.all(1.h),
                                             itemCount: titles.length,

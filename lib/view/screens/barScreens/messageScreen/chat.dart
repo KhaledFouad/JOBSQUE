@@ -42,7 +42,7 @@ class Chat extends StatelessWidget {
             children: [
               messageImages[indx],
               SizedBox(
-                width: 2.w,
+                width: 1.5.w,
               ),
               DefaultText(
                 text: messageTitle[indx],
@@ -79,8 +79,8 @@ class Chat extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(30),
-                                    border:
-                                        Border.all(color: AppColor.buttonColor)),
+                                    border: Border.all(
+                                        color: AppColor.buttonColor)),
                                 child: ListTile(
                                   onTap: () {},
                                   contentPadding:

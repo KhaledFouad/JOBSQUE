@@ -1,3 +1,5 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_app/utilities/route/router.dart';
@@ -9,15 +11,15 @@ void main() async {
   //  await MyCache.init();
 
   runApp(
-      // DevicePreview(
-      //     enabled: !kReleaseMode,
-      //     builder: (context) =>
+    DevicePreview(
+          enabled: !kReleaseMode,
+          builder: (context) =>
       MultiBlocProvider(providers: [
     // BlocProvider(create: (_) => ColorCubit()),
     BlocProvider(create: (_) => RegisterCubit()),
   ], child: const MyApp())
       // ),
-      // ),
+      ),
       );
 }
 
