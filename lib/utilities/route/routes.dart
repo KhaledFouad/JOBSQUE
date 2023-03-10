@@ -20,10 +20,10 @@ class AppRoutes {
   static const String homePageRoute = "HomeScreen";
   static const String homePageUpdatedRoute = "HomeScreenUpdated";
   static const String setFilterPageRoute = "SetFilterScreen";
+  static const String notificationPageRoute = "NotificationScreen";
 
   static const String jobDetailPageRoute = "jobDetailScreen";
   static const String applyJobPageRoute = "applyJobScreen";
   static const String applySuccessPageRoute = "applyDoneScreen";
-    static const String chatPageRoute = "chatScreen";
-
+  static const String chatPageRoute = "chatScreen";
 }

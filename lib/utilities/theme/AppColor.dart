@@ -35,4 +35,5 @@ class AppColor {
 
   static Color successColor = const Color(0xff60C631);
   static Color errorColor = const Color(0xffFF472B);
+  static Color yellowColor = const Color(0xffDBB40E);
 }

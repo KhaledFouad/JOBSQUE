@@ -18,22 +18,22 @@ class _Step2State extends State<Step2> {
   final List<GroupModel> _group = [
     GroupModel(
         title: "Senior UX Designer",
-        subTitle: "CV.pdf - Portfolio.pdf",
+        subTitle: "CV.pdf • Portfolio.pdf",
         index: 1,
         selected: false),
     GroupModel(
         title: "Senior UI Designer",
-        subTitle: "CV.pdf - Portfolio.pdf",
+        subTitle: "CV.pdf • Portfolio.pdf",
         index: 2,
         selected: false),
     GroupModel(
         title: "Graphic Designer",
-        subTitle: "CV.pdf - Portfolio.pdf",
+        subTitle: "CV.pdf • Portfolio.pdf",
         index: 3,
         selected: false),
     GroupModel(
         title: "Front-End Developer",
-        subTitle: "CV.pdf - Portfolio.pdf",
+        subTitle: "CV.pdf • Portfolio.pdf",
         index: 4,
         selected: false),
   ];

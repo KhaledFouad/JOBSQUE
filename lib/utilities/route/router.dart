@@ -3,6 +3,7 @@ import 'package:my_app/utilities/route/routes.dart';
 import 'package:my_app/view/screens/Apply%20Job/Apply%20Job.dart';
 import 'package:my_app/view/screens/Apply%20Job/HomeScreenUpdated.dart';
 import 'package:my_app/view/screens/Apply%20Job/applyDoneScreen.dart';
+import 'package:my_app/view/screens/Notify/Notification.dart';
 import 'package:my_app/view/screens/barScreens/messageScreen/chat.dart';
 import 'package:my_app/view/screens/Job%20Detail/JobDetailScreen.dart';
 import 'package:my_app/view/screens/barScreens/NavigationBar.dart';
@@ -14,12 +15,10 @@ import 'package:my_app/view/screens/authScreens/ResetPassword/ResetPassword4.dar
 import 'package:my_app/view/screens/authScreens/register/RegisterScreen2.dart';
 import 'package:my_app/view/screens/authScreens/register/RegisterScreen3.dart';
 import 'package:my_app/view/screens/authScreens/register/RegisterScreen4.dart';
-import 'package:my_app/view/screens/barScreens/HomeScreen/SearchScreen.dart';
 import 'package:my_app/view/screens/barScreens/HomeScreen/SetFilterScreen.dart';
 import '../../view/screens/authScreens/login/LoginScreen.dart';
 import '../../view/screens/onboarding screens/onboarding_screen.dart';
 import '../../view/screens/authScreens/register/RegisterScreen.dart';
-import '../../view/screens/splash/SplachScreen.dart';
 
 Route<dynamic> onGenerate(RouteSettings routeSettings) {
   switch (routeSettings.name) {
@@ -77,6 +76,9 @@ Route<dynamic> onGenerate(RouteSettings routeSettings) {
     case AppRoutes.homePageUpdatedRoute:
       return MaterialPageRoute(
           builder: (_) => const HomeScreenUpdated(), settings: routeSettings);
+    case AppRoutes.notificationPageRoute:
+      return MaterialPageRoute(
+          builder: (_) => const NotificationScreen(), settings: routeSettings);
     case AppRoutes.setFilterPageRoute:
       return MaterialPageRoute(
           builder: (_) => const SetFilterScreen(), settings: routeSettings);

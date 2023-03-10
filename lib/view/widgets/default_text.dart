@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class DefaultText extends StatelessWidget {
   final String text;
   final int? maxLines;
@@ -12,23 +10,25 @@ class DefaultText extends StatelessWidget {
   final FontWeight? fontWeight;
   final double? fontSize;
   final TextDecoration? textDecoration;
+  
 
   const DefaultText(
       {Key? key,
-        required this.text,
-        this.maxLines,
-        this.color = Colors.black,
-        this.textAlign,
-        this.textScaleFactor,
-        this.fontWeight = FontWeight.normal,
-        this.overflow = TextOverflow.ellipsis,
-        this.textDecoration,
-        this.fontSize})
+      required this.text,
+      this.maxLines,
+      this.color = Colors.black,
+      this.textAlign,
+      this.textScaleFactor,
+      this.fontWeight = FontWeight.normal,
+      this.overflow = TextOverflow.ellipsis,
+      this.textDecoration,
+      this.fontSize})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
+      
       text,
       textDirection: TextDirection.ltr,
       style: TextStyle(

@@ -35,6 +35,7 @@ class _NavigationBarScreenState extends State<NavigationBarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: AppColor.white,
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
@@ -68,6 +69,7 @@ class _NavigationBarScreenState extends State<NavigationBarScreen> {
         backgroundColor: AppColor.white,
         unselectedItemColor: AppColor.secFont,
         showUnselectedLabels: true,
+        
       ),
     );
   }

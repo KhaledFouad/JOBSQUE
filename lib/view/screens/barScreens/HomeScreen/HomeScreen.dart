@@ -56,10 +56,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         backgroundColor: AppColor.balck2,
                         child: CircleAvatar(
                           backgroundColor: AppColor.white2,
-                          child: Icon(
-                            Icons.notifications_none_rounded,
-                            color: AppColor.balck2,
-                            size: 30,
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.notifications_none_rounded,
+                              color: AppColor.balck2,
+                            ),
+                            onPressed: () {
+                              Navigator.pushNamed(
+                                  context, AppRoutes.notificationPageRoute);
+                            },
                           ),
                         ),
                       ),
@@ -144,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         width: 2.w,
                       ),
                       const SuggestedJob(
-                        jobIcon: "assets/Zoom Logo.png",
+                        jobIcon: "assets/Slack Logo.png",
                         jobSubTitle: 'Slack • United States',
                         jobTitle: 'Product Designer',
                         salary: '\$12K-15K',
