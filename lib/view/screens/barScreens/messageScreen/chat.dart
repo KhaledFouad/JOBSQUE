@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/utilities/theme/AppColor.dart';
-import 'package:my_app/view/widgets/customText.dart';
+import 'package:my_app/view/screens/barScreens/messageScreen/chatScreen.dart';
 import 'package:my_app/view/widgets/default_text.dart';
 import 'package:sizer/sizer.dart';
 
@@ -11,13 +11,28 @@ TextEditingController messageController = TextEditingController();
 class Chat extends StatelessWidget {
   int indx;
   Chat({Key? key, required this.indx}) : super(key: key);
-
+  List<Icon> icons = [
+    const Icon(Icons.work_outline_rounded),
+    const Icon(Icons.note_outlined),
+    const Icon(Icons.sms_outlined),
+    const Icon(Icons.notifications_none_rounded),
+    const Icon(Icons.file_download_outlined),
+    const Icon(Icons.delete_outline_rounded),
+  ];
+  List<String> titles = [
+    'Visit job post',
+    'View my application',
+    'Mark as unread',
+    "Mute",
+    "Archive",
+    "Delete conversation"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColor.white2,
       appBar: AppBar(
-        toolbarHeight: 80,
+        toolbarHeight: 70,
         backgroundColor: AppColor.white,
         elevation: 0.5,
         centerTitle: true,
@@ -28,24 +43,71 @@ class Chat extends StatelessWidget {
             SizedBox(
               width: 2.w,
             ),
-            CustomText(
-              messageTitle[indx],
-              textColor: AppColor.balck2,
+            DefaultText(
+              text: messageTitle[indx],
+              color: AppColor.balck2,
               fontSize: 16,
-              fontweight: FontWeight.w500,
+              fontWeight: FontWeight.w500,
             ),
           ],
         ),
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.more_horiz,
-                size: 30,
+            child: InkWell(
+              onTap: () {
+                showModalBottomSheet<void>(
+                  backgroundColor: AppColor.white,
+                  // context and builder are
+                  // required properties in this widget
+                  context: context,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(24.0),
+                    ),
+                  ),
+                  builder: (BuildContext context) {
+                    return ListView.builder(
+                      padding: EdgeInsets.all(1.h),
+                      itemCount: 6,
+                      itemBuilder: (context, int index2) => Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(1.h),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(30),
+                                  border:
+                                      Border.all(color: AppColor.buttonColor)),
+                              child: ListTile(
+                                onTap: () {},
+                                contentPadding:
+                                    EdgeInsets.symmetric(horizontal: 2.5.w),
+                                leading: icons[index2],
+                                title: DefaultText(
+                                    text: titles[index2],
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500),
+                                trailing: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.navigate_next_rounded,
+                                      size: 20.sp,
+                                    )),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                );
+              },
+              child: Image.asset(
+                "assets/more.png",
+                cacheWidth: 50,
               ),
-              color: AppColor.primaryColor,
             ),
           ),
         ],
@@ -99,97 +161,7 @@ class Chat extends StatelessWidget {
               ),
             ]),
           ),
-          Expanded(
-            child: ListView(
-              physics: const BouncingScrollPhysics(),
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(right: 20.w, left: 5.w, bottom: 3.h),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18),
-                        color: AppColor.buttonColor),
-                    child: Padding(
-                      padding: EdgeInsets.all(20.sp),
-                      child: const Text(
-                          'Hi Rafif!, Im Melan the selection team from Twitter. Thank you for applying for a job at our company. We have announced that you are eligible for the interview stage.'),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 20.w, right: 5.w, bottom: 3.h),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18),
-                        color: AppColor.primaryColor),
-                    child: Padding(
-                      padding: EdgeInsets.all(20.sp),
-                      child: const Text(
-                        'Hi Melan, thank you for considering me, this is good news for me.,',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 20.w, left: 5.w, bottom: 3.h),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18),
-                        color: AppColor.buttonColor),
-                    child: Padding(
-                      padding: EdgeInsets.all(20.sp),
-                      child: const Text(
-                          'Hi Rafif!, Im Melan the selection team from Twitter. Thank you for applying for a job at our company. We have announced that you are eligible for the interview stage.'),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 20.w, right: 5.w, bottom: 3.h),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18),
-                        color: AppColor.primaryColor),
-                    child: Padding(
-                      padding: EdgeInsets.all(20.sp),
-                      child: const Text(
-                        'Hi Melan, thank you for considering me, this is good news for me.,',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 20.w, left: 5.w, bottom: 3.h),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18),
-                        color: AppColor.buttonColor),
-                    child: Padding(
-                      padding: EdgeInsets.all(20.sp),
-                      child: const Text(
-                          'Hi Rafif!, Im Melan the selection team from Twitter. Thank you for applying for a job at our company. We have announced that you are eligible for the interview stage.'),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 20.w, right: 5.w, bottom: 3.h),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18),
-                        color: AppColor.primaryColor),
-                    child: Padding(
-                      padding: EdgeInsets.all(20.sp),
-                      child: const Text(
-                        'Hi Melan, thank you for considering me, this is good news for me.,',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          const ChatScreen(),
           Container(
             color: Colors.white,
             child: Row(
