@@ -226,7 +226,7 @@ class _MessageScreenState extends State<MessageScreen> {
                       radius: 23.sp,
                       child: CircleAvatar(
                         backgroundColor: AppColor.white,
-                        radius: 22.sp,
+                        radius: 22.5.sp,
                         child: Image.asset("assets/setting-4.png"),
                       ),
                     ),
@@ -267,6 +267,7 @@ class _MessageScreenState extends State<MessageScreen> {
                       ]),
                     )
                   : ListView.builder(
+                      physics: BouncingScrollPhysics(),
                       itemBuilder: (context, index) => Column(
                         children: [
                           Padding(

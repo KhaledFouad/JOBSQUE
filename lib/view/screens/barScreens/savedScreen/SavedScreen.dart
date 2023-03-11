@@ -100,6 +100,7 @@ class _SavedScreenState extends State<SavedScreen> {
                     Padding(
                       padding: EdgeInsets.all(1.5.h),
                       child: ListView.builder(
+                        physics: BouncingScrollPhysics(),
                         itemCount: _group.length,
                         shrinkWrap: true,
                         itemBuilder: (context, index) => Column(
@@ -135,8 +136,9 @@ class _SavedScreenState extends State<SavedScreen> {
                                       ),
                                       builder: (BuildContext context) {
                                         return SizedBox(
-                                          height: 35.h,
+                                          height: 33.h,
                                           child: ListView.builder(
+                                            physics: BouncingScrollPhysics(),
                                             padding: EdgeInsets.all(1.h),
                                             itemCount: titles.length,
                                             itemBuilder:

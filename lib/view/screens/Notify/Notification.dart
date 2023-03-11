@@ -92,6 +92,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     Padding(
                       padding: EdgeInsets.all(1.5.h),
                       child: ListView.builder(
+                        physics: BouncingScrollPhysics(),
                         itemCount: titles.length,
                         shrinkWrap: true,
                         itemBuilder: (context, index) => Column(
@@ -171,6 +172,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     Padding(
                       padding: EdgeInsets.all(1.5.h),
                       child: ListView.builder(
+                        physics: BouncingScrollPhysics(),
                         itemCount: titles2.length,
                         shrinkWrap: true,
                         itemBuilder: (context, index3) => Column(

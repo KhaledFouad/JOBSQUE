@@ -278,13 +278,13 @@ class _JobDetailScreenState extends State<JobDetailScreen>
                         fontweight: FontWeight.w500,
                         textAlign: TextAlign.left,
                       ),
-                      SizedBox(height: 1.h),
+                      SizedBox(height: 0.5.h),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             height: 10.h,
-                            width: 40.w,
+                            // width: 40.w,
                             decoration: BoxDecoration(
                               border: Border.all(color: AppColor.buttonColor),
                               color: AppColor.white,
@@ -322,7 +322,7 @@ class _JobDetailScreenState extends State<JobDetailScreen>
                           // Spacer(),
                           Container(
                             height: 10.h,
-                            width: 40.w,
+                            // width: 40.w,
                             decoration: BoxDecoration(
                               border: Border.all(color: AppColor.buttonColor),
                               color: AppColor.white,

@@ -10,7 +10,8 @@ class RecentJob extends StatefulWidget {
     required this.jobTitle,
     required this.jobSubTitle,
     required this.salary,
-    required this.jobIcon, required this.ontap,
+    required this.jobIcon,
+    required this.ontap,
   }) : super(key: key);
   final String jobTitle;
   final String jobSubTitle;
@@ -27,9 +28,9 @@ class _RecentJobState extends State<RecentJob> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 20.h,
+      height: 20.5.h,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: EdgeInsets.symmetric(vertical: 0.7.w),
         child: InkWell(
           onTap: widget.ontap,
           child: Column(
