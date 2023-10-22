@@ -45,10 +45,12 @@ class JobListViewItem extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        jobModel.name!,
-                        style: AppStyles.textStyle16.copyWith(
-                          fontWeight: FontWeight.bold,
+                      Expanded(
+                        child: Text(
+                          jobModel.name!,
+                          style: AppStyles.textStyle16.copyWith(
+                              fontWeight: FontWeight.bold,
+                              overflow: TextOverflow.clip),
                         ),
                       ),
                       AddToSavedButton(jobId: jobModel.id!),
