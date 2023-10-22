@@ -68,10 +68,10 @@ dev_dependencies:
     sdk: flutter
 
 
-#   flutter_native_splash: any
-# flutter_native_splash:
-#   color: "#ffffff"
-#   image: assets/images/logo.png
+  flutter_native_splash: any
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo.png
 
 
 flutter_icons:  

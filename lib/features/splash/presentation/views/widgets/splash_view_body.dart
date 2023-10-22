@@ -9,7 +9,7 @@ class SplashViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: LogoWidget(
-        height: 40.h,
+        height: 50.h,
       ),
     );
   }
