@@ -43,10 +43,12 @@ class SavedListViewItem extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      savedModel.jobs!.name!,
-                      style: AppStyles.textStyle16.copyWith(
-                        fontWeight: FontWeight.bold,
+                    Expanded(
+                      child: Text(
+                        savedModel.jobs!.name!,
+                        style: AppStyles.textStyle16.copyWith(
+                            fontWeight: FontWeight.bold,
+                            overflow: TextOverflow.clip),
                       ),
                     ),
                     CustomContainerButton(
