@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:jobhub/config/icons/icons_broken.dart';
 import 'package:jobhub/core/functions/show_snack_bar.dart';
 import 'package:jobhub/core/utils/app_colors.dart';
@@ -11,7 +12,6 @@ import 'package:jobhub/core/widgets/gradient_button.dart';
 import 'package:jobhub/features/profile/presentation/cubits/get_user_profile_cubit/get_user_profile_cubit.dart';
 import 'package:jobhub/features/profile/presentation/cubits/update_user_profile_cubit/update_user_profile_cubit.dart';
 import 'package:jobhub/features/profile/presentation/cubits/update_user_profile_cubit/update_user_profile_state.dart';
-import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class UpdateNameBottomSheetContent extends StatelessWidget {
   const UpdateNameBottomSheetContent({Key? key, required this.name})
